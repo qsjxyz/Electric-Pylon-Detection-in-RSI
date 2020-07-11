@@ -1,0 +1,3 @@
+python train.py --data data/pylon.data --cfg cfg/yolov3.cfg --epochs 50 --weights 'weights/yolov3.weights'
+python detect.py --data data/pylon.data --cfg cfg/yolov3.cfg --weights weights/best.pt
+python test.py --data data/pylon.data --cfg cfg/yolov3.cfg --weights weights/best.pt
